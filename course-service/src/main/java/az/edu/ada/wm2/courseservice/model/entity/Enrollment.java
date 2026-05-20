@@ -12,6 +12,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import java.time.LocalDate;
 
 @Entity
 @Table(
@@ -35,4 +36,8 @@ public class Enrollment {
     @Column(name = "student_id", nullable = false)
     private Long studentId;
 
+    private LocalDate enrollmentDate;
+
 }
+
+
